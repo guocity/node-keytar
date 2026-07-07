@@ -1,12 +1,10 @@
 name: CI
 
+# Runs only when a release tag is pushed; regular commits/PRs do not trigger it.
 on:
   push:
-    branches: [ master ]
     tags:
       - v*.*.*
-  pull_request:
-    branches: [ master ]
 
 # Least privilege by default; jobs opt into more where needed.
 permissions:
