@@ -3,7 +3,7 @@
   "typings": "keytar.d.ts",
   "name": "@guocity/keytar",
   "description": "Bindings to native Mac/Linux/Windows password APIs",
-  "version": "7.9.0",
+  "version": "7.9.1",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
