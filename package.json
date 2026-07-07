@@ -45,7 +45,11 @@
     "prebuild-napi-ia32": "prebuild -t 3 -r napi -a ia32 --strip",
     "prebuild-napi-arm64": "prebuild -t 3 -r napi -a arm64 --strip",
     "prebuild-napi-armv7l": "prebuild -t 3 -r napi -a armv7l --strip",
-    "upload": "node ./script/upload.js"
+    "upload": "node ./script/upload.js",
+    "release": "bash ./script/release.sh",
+    "release:minor": "bash ./script/release.sh minor",
+    "release:major": "bash ./script/release.sh major",
+    "release:current": "bash ./script/release.sh current"
   },
   "devDependencies": {
     "chai": "^4.5.0",
